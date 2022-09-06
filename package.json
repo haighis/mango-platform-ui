@@ -1,6 +1,6 @@
 {
   "name": "mango-platform-ui",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "",
   "keywords": [],
   "main": "dist/mango-platform-ui.umd.js",
@@ -12,7 +12,7 @@
   "author": "John Haigh <jhaigh@versosys.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/haighis/mango-platform-ui"
+    "url": "https://github.com/haighis/mango-platform-ui.git"
   },
   "license": "MIT",
   "engines": {
@@ -27,7 +27,7 @@
     "test:watch": "jest --watch",
     "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
     "deploy-docs": "ts-node tools/gh-pages-publish",
-    "semantic-release-prepare": "ts-node tools/semantic-release-prepare"
+    "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
   },
   "jest": {
     "transform": {
@@ -72,6 +72,7 @@
     "tslint": "^5.7.0",
     "typedoc": "^0.7.1",
     "typescript": "^2.5.2",
-    "zone.js": "^0.8.17"
+    "zone.js": "^0.8.17",
+    "semantic-release": "^19.0.5"
   }
 }
